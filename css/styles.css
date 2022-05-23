@@ -32,6 +32,7 @@ body{
 .nav__links ul a{
     text-decoration: none;
     color: #FFFFFF;
+    font-family: "Roboto";
 }
 
 
@@ -71,6 +72,10 @@ body{
 
 /*--MAIN*/
 
+.main{
+    margin-top: 100px;
+}
+
 .main__elem{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -83,33 +88,66 @@ body{
     width: 49.5%;
     height: 100%;
     position: absolute;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.6);
 }
 .main__two::before{
     content: "";
     width: 49.5%;
     height: 100%;
     position: absolute;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.6);
 }
 
 .main__elem img{
     width: 100%;
     display: block;
 }
-.main__one p{
+.main__one .main__text{
+    text-align: center;
     position: absolute;
     color: #FFFFFF;
     bottom: 30%;
     left: 19%;
     font-family: Roboto;
-    font-size: 35px;
+    font-size: 25px;
 }
-.main__two p{
+.main__one .main__text p{
+    color: #c2c2c2;
+}
+.main__two .main__text{
+    text-align: center;
     position: absolute;
     color: #FFFFFF;
     bottom: 30%;
     left: 73%;
     font-family: Roboto;
-    font-size: 35px;
+    font-size: 25px;
+}
+.main__two .main__text p{
+    color: #c2c2c2;
+}
+
+
+/*--TECHNOLOGIES--*/
+
+.main__tech{
+    margin-top: 100px;
+}
+.tech__list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tech__list li{
+    list-style: none;
+    margin-left: 100px;
+}
+
+.circulo{
+    width: 100px;
+    height: 100px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #343434;
 }
